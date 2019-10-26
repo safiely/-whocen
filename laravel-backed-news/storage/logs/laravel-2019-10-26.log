@@ -1,0 +1,23 @@
+[2019-10-26 16:30:19] local.ERROR: file_put_contents(C:\xampp7\htdocs\news\storage\framework/sessions/jfpTGJqBaajaTL6i4zZMlu59wks4YvHxNWIAkVvw): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\xampp7\\htdocs\
+ews\\storage\\framework/sessions/jfpTGJqBaajaTL6i4zZMlu59wks4YvHxNWIAkVvw): failed to open stream: No such file or directory at C:\\xampp7\\htdocs\
+ews\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:122)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_put_conten...', 'C:\\\\xampp7\\\\htdoc...', 122, Array)
+#1 C:\\xampp7\\htdocs\
+ews\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(122): file_put_contents('C:\\\\xampp7\\\\htdoc...', 'a:4:{s:6:\"_toke...', 2)
+#2 C:\\xampp7\\htdocs\
+ews\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\FileSessionHandler.php(83): Illuminate\\Filesystem\\Filesystem->put('C:\\\\xampp7\\\\htdoc...', 'a:4:{s:6:\"_toke...', true)
+#3 C:\\xampp7\\htdocs\
+ews\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Store.php(129): Illuminate\\Session\\FileSessionHandler->write('jfpTGJqBaajaTL6...', 'a:4:{s:6:\"_toke...')
+#4 C:\\xampp7\\htdocs\
+ews\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(87): Illuminate\\Session\\Store->save()
+#5 C:\\xampp7\\htdocs\
+ews\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(218): Illuminate\\Session\\Middleware\\StartSession->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 C:\\xampp7\\htdocs\
+ews\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(189): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 C:\\xampp7\\htdocs\
+ews\\public\\index.php(60): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 C:\\xampp7\\htdocs\
+ews\\server.php(21): require_once('C:\\\\xampp7\\\\htdoc...')
+#9 {main}
+"} 
